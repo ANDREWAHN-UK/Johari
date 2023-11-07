@@ -67,6 +67,7 @@ function sendEmail(){
     Username : "andrew.ahn@hotmail.co.uk",
     Password : "2FD50335A4CE4C7316653A7667C49C36A72A",
     To : 'andrew.ahn@hotmail.co.uk',
+    To : 'ahnclain@gmail.com',
     From : 'andrew.ahn@hotmail.co.uk',
     ReplyFrom: document.getElementById("email").value,
     Subject : "New message from Johari contact form",
