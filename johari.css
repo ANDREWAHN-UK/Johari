@@ -22,10 +22,19 @@ nav {
     color: white;
 } 
 
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+  }
+
 /*hero section*/
 
 .hero {
- 
    background-image: url(./assets/images/sunset.jpg);
     height: 100vh;
     background-size: cover;
@@ -203,7 +212,8 @@ i {
 
 .contact-container{
   padding-top: 200px;
-  height: 100vh;
+  min-height:100vh;
+  height: 100%;
   background: black;
 }
 
@@ -230,24 +240,6 @@ form{
   margin: 5px 0 5px 0;
 }
 
- /*responsiveness for contact us page */
-
-@media screen and (max-width: 400px) {
-  .contact-container{
-    padding-top: 100px;
-    min-height:100%;
-  }
-
-  .btn{
-    margin-left: 50%;
-    transform: translate(-50%, -50%);
-  }
-}
-
-
-
-
-
 /* ========================================= */
 
 /* 2nd contact us form*/
@@ -263,6 +255,7 @@ form{
   --color-gray: #e5e7eb;
   --color-dark-gray: #9da3ae;
   --color-pink: #edadd2;
+
 }
 
 .formcarry-container {
@@ -273,7 +266,8 @@ form{
   width: var(--c-width);
   max-width: var(--c-max-width);
   display: block;
-  margin: 10vh auto 0 auto;
+  margin: 10vh auto 0 auto;  
+  background: black;
 }
 
 .formcarry-form label {
@@ -351,4 +345,36 @@ form{
 
 .formcarry-alert.error {
   background: #de524c;
+}
+
+
+
+ /*responsiveness for contact us page */
+
+ @media screen and (max-width: 400px) {
+
+  .contact-container{
+    padding-top: 20px;
+    
+  }
+
+  .btn{
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .formcarry-container {
+    /* container */
+    --c-width: 800%;
+    --c-max-width: 90%;
+  
+    width: var(--c-width);
+    max-width: var(--c-max-width);
+    display: block;
+    margin: 10vh auto 0 auto;
+    height: 100vh;
+    padding: 0;
+    background: black;
+  }
+
 }
